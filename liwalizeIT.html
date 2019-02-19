@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles/liwalize.css">
+	<title>Liwalize IT</title>
+</head>
+<body>
+	<header>
+		<img src="surf.png">
+		<nav>
+			<ul>
+				<li class="current"><a href="liwalizeIT.html">Home</a></li>
+				<li><a href="liwalizeGallery.html">Gallery</a></li>
+				<li><a href="ThingsTodo.html">Things to do</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="sizeformat">
+			<h1>This new surf camp in Zambales is a "GOOD VIBES ONLY ZONE"</h1>
+	</div>
+		<div id="imagecontainer"class="fade">
+			<img class="slides fade" src="homeImage/beachview1.jpg">
+			<img class="slides fade" src="homeImage/beachview2.jpg">
+			<img class="slides fade" src="homeImage/beachview3.jpg">
+			<img class="slides fade" src="homeImage/beachview4.jpg">
+			<button class="btn" onclick="plusIndex(-1)" id="btn1">&#10094;</button>
+			<button class="btn" onclick="plusIndex(1)" id="btn2">&#10095;</button>
+		</div>
+	<div class="sizeformat">
+			<p> How many times have you dreamt of leaving the pile of paperwork on your desk to hop on the next bus to any beach strip nearby? <b><font color='lightgreen'>LIWALIZE IT SURF CAMP</font></b> <br>A New Resort in San Felipe, Zambales, Offers a much needed respite from the city and more. <br>It is located in <b><font color='lightgreen'>LIWLIWA</font></b>, a quiet firshing village known for amazing  beaches that serve as playground for surfers, skimboarders, and beach-lovers.<br><b><font color='lightgreen'>"LIWALIZE"</font></b> it was from the popular hashtag and expression <b><font color='lightgreen'>#liwalized</font></b> which describes the experience of spending and amazing time in Liwliwa.<br>"the resort owner <b>Paolo Manuel Soler</b> explains on <a  href="https://www.spot.ph/things-to-do/the-latest-things-to-do/71750/liwalize-it-surf-camp-san-felipe-zambales-a00171-20171013-lfrm" target="_blank">spot.ph</a>"</p>
+	</div>
+</body>
+<script type="text/javascript">
+	let index = 1;
+
+	function plusIndex(n){
+		index = index +1;
+		showImage(index);
+	}
+	showImage(1);
+
+	function showImage(n){
+		let i;
+		let x = document.getElementsByClassName("slides");
+		if(n>x.length){index = 1};
+		if(n<1){index = x.length};
+		for(i=0;i<x.length;i++){
+			x[i].style.display = "none";
+		}
+		x[index-1].style.display = "block";
+	}
+	autoSlide();
+	function autoSlide() {
+				let i;
+		let x = document.getElementsByClassName("slides");
+		for(i=0;i<x.length;i++){
+			x[i].style.display = "none";
+		}
+		if (index>x.length){index = 1}
+		x[index-1].style.display = "block";
+		index++;
+		setTimeout(autoSlide, 2500);
+	}
+</script>
+<footer>
+	<p>Like us on <a href="https://www.facebook.com/liwalizeit/" target="_blank"><font color="#2d7eff"><b>FACEBOOK!</b></font></a> Follow us on <a href="https://www.instagram.com/liwalizeit/?utm_source=ig_embed" target="_blank"><font color="#e5165b"><b>INTAGRAM!</b></font></a> for updates.</p>
+		<p>Contact us at: <b>LiwalizeNow@gmail.com</b> or Call us: <b>#0999 - 999 - 9999</b></p>
+		<p>	This website was created by Team Liwalize &copy; copyright 2018</p>
+</footer>
+</html>
+

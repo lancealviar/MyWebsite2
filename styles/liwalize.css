@@ -1,0 +1,216 @@
+/*
+The theme is beach and fun times so used the color blue like the color of the sea. This color doesn't put too much stress on your eyes.
+I created the website using width% so it automatically adjusts to your screen.
+I created the home navigation with as little decoration because it is not the main focus of the page.
+The homepage has a sliding image to showcase activities that you can do in liwalize it surf camp. The paragraph explains the surf camp along with the name of the owner and links to their spot.ph.
+The gallery has a collection of for people that have been there. you can enlarge the photos by clicking on it. hovering over it enlarge the picture by a little.
+The last page is the things to do and it gives some of the detailed activities that you can do in liwalize it surf camp. there's also an input area in case the guest wants to book a vacation.
+Overall creating this website was fun. praxxis really is, an amazing company. having worked with brands such and rustan's, apec, familymart and many more. i've learned a lot when creating the example website.
+I was happy to put my skills, AND know that i have TONS more to learn. I thank you for letting me take this exam and giving me the opportunity to make it with the abilities that i got for now.
+I will continue learning and improve myself. hopefully within the praxxis team.
+*/
+body{
+	margin: 0;
+	padding: 0;
+	background:#eff3f9;
+}
+header {
+	background: #d3e4ff;
+	height: 150px;
+	width: 100%;
+	border-bottom: solid 2px #193e8e;
+}
+header img {
+	width: 150px;
+	height: 120px;
+	margin: 10px 50px;
+	float:left;
+}
+header ul{
+	list-style: none;
+	float: right;
+	margin-right: 40px;
+}
+header li {
+	display: block;
+	float: left;
+	margin-right: 20px;
+}
+header a {
+	padding-right: 30px;
+	font-family: verdana;
+	line-height: 122px;
+	font-size: 22px;
+	color:#244999 ;
+	font-weight: 500;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+header a:hover {
+	font-weight: 700;
+}
+header .current a{
+	font-weight: 700;
+}
+
+.sizeformat {
+	width: 80%;
+	margin:auto;
+	overflow: hidden;
+}
+.sizeformat h1{
+	text-align: center;
+	font-family: Cursive;
+	color:#208eba;
+	text-shadow: 1px 1px #000;
+}
+.sizeformat h2{
+	margin:15px 20px;
+	font-family: Cursive;
+	color:#1060e5;
+	text-shadow: 1px 1px #000;
+	letter-spacing: 1px;
+}
+.sizeformat p{
+	text-align: center;
+	font-size: 20px;
+	color:#fff;
+	text-shadow: 1px 1px #000;
+	background:#215cba;
+	border-radius: 5px;
+	padding: 30px 10px;
+	font-family: cursive;
+}
+.sizeformat a {
+	color:#fc6464;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.sizeformat a:hover {
+	font-size: 20px;
+	color:#f22645;
+}
+#imagecontainer{
+	width: 70%;
+	height: 500px;
+	border: 2px solid #000;
+	margin: auto;
+	position: relative;
+}
+#imagecontainer>img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+#imagecontainer>.btn {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	font-size: 30px;
+	background:none;
+	top: 220px;
+	color: white;
+}
+#imagecontainer>#btn2{
+	position: relative;
+	float: right;
+}
+#imagecontainer>.btn:hover{
+	font-weight: 700;
+	color:#244999 ;
+}
+.fade{
+	animation-name: fade;
+	animation-duration: 0.7s;
+}
+@keyframes fade{
+	from{opacity: 0.4}
+	to{opacity: 1}
+}
+.galleryformat {
+	width: 80%;
+	margin: auto;
+}
+.galleryformat img{
+	width: 20%;
+	margin: 20px;
+	height: 250px;
+	filter: grayscale(100%);
+	transition: 1s;
+	border:1px solid #000;
+	border-radius: 5px;
+}
+.galleryformat img:hover{
+	filter: grayscale(0%);
+	transform: scale(1.1);
+}
+.thingstodo {
+	width: 80%;
+	height: 400px;
+	background:#215cba;
+	border-radius: 5px;
+	margin:auto;
+	overflow: hidden;
+}
+.thingstodo p{
+	font-size: 18px;
+	width: 55%;
+	color:#fff;
+	text-shadow: 1px 1px #000;
+	padding: 50px 25px;
+	font-family: cursive;
+}
+.thingstodo img {
+	width: 35%;
+	height: 300px;
+	float: right;
+	margin: 50px 30px;
+	border:2px solid #000;
+	border-radius: 5px;
+}
+.submit {
+	width: 80%;
+	margin: auto;
+	height: 110px;
+	background:#b5c6e0;
+}
+.submit p {
+	padding: 10px;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color:#ff3f3f;
+	text-shadow: 0px 1px #000;
+}
+.submit label {
+	padding:0 10px;
+}
+.submit input {
+	padding: 3px;
+}
+.submit button {
+	padding: 3px;
+	margin-left: 5px;
+	border-radius: 5px;
+}.submit button:hover {
+	color:#ff3f3f;
+}
+footer {
+	margin-top: 20px;
+	background: #d3e4ff;
+	height: 150px;
+	width: 100%;
+	border-top: solid 2px #193e8e;
+}
+footer p {
+	text-align: center;
+	margin: 20px 0;
+}
+footer p a{
+	text-decoration: none;
+}
+footer p a:hover{
+	opacity: 0.7;
+}
